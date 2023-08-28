@@ -20,3 +20,17 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+let mybutton = document.getElementById('backtotop')
+
+window.onscroll = function () {
+  scrollFunction()
+}
+
+function scrollFunction () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block'
+  } else {
+    mybutton.style.display = 'none'
+  }
+}
