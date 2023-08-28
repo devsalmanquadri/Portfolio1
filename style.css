@@ -36,6 +36,7 @@ body {
   font-size: 2vw;
   font-weight: 1000;
   color: orange;
+  text-decoration: none;
 }
 .navitems {
   display: flex;
@@ -72,6 +73,28 @@ body {
 }
 .front span {
   color: orange;
+}
+.topicons {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+  height: 4vw;
+  margin-top: 2vh;
+}
+.topim {
+  width: 2.8vw;
+  height: 2.8vw;
+}
+.yt {
+  margin-top: 0.7vw;
+  height: 2vw;
+}
+.sm {
+  margin-top: 0.2vw;
+}
+.bi {
+  height: 3.5vw;
+  width: 3.5vw;
 }
 .left {
   width: 50%;
@@ -293,6 +316,7 @@ body {
   /* background-color: rgb(0, 136, 255); */
   height: 80vh;
   gap: 20px;
+  /* background-color: #008cba; */
 }
 .con a {
   text-decoration: none;
@@ -308,42 +332,49 @@ body {
 }
 .icons {
   display: flex;
-  margin-left: 3vw;
+  margin-left: 4vw;
   flex-direction: row;
   justify-content: space-between;
   font-size: 2vw;
   width: 350px;
+  height: 80px;
+  /* background-color: #008cba; */
 }
-.face:hover {
-  background-color: #2d2d2d;
+.icoimg:hover {
+  /* border-radius: 50%; */
+  color: #2d2d2d;
 }
-.what:hover {
-  background-color: #2d2d2d;
+.ico {
+  width: 100px;
+  height: 100px;
 }
-.insta:hover {
-  background-color: #2d2d2d;
-}
-.git1:hover {
-  background-color: #2d2d2d;
+.icoimg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 .face {
-  padding: 10px 20px;
-  border: 2px solid rgb(255, 255, 255);
+  /* padding: px 20px; */
+  /* border: 2px solid rgb(255, 255, 255); */
   border-radius: 50%;
 }
 .what {
-  padding: 10px 15px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50%;
+  padding: 5px 5px;
+  /* border: 2px solid rgb(255, 255, 255); */
+  /* border-radius: 50%; */
+  height: 70px;
 }
 .insta {
-  padding: 10px 15px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50%;
+  height: 70px;
+  padding: 5px 5px;
+  /* border: 2px solid rgb(255, 255, 255); */
+  /* border-radius: 50%; */
 }
 .git1 {
-  padding: 10px 15px;
-  border: 2px solid rgb(255, 255, 255);
+  /* height: 90px; */
+  /* padding: 10px 15px; */
+  /* border: 2px solid rgb(255, 255, 255); */
   border-radius: 50%;
 }
 
@@ -397,6 +428,12 @@ body {
   align-items: center;
   height: 40px;
 }
+#backtotop {
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  z-index: 999;
+}
 
 @media screen and (max-width: 600px) {
   .main {
@@ -435,8 +472,7 @@ body {
     height: 100vh;
   }
   .left {
-    /* background-color: #232323; */
-    font-size: 40vw;
+    margin-left: 3vw;
     width: 100%;
     height: 40%;
   }
@@ -446,11 +482,31 @@ body {
   .front {
     font-size: 8vw;
   }
+  .topicons {
+    width: 45vw;
+    height: 5vw;
+    margin-top: 2vh;
+  }
+  .topim {
+    width: 5vw;
+    height: 5vw;
+  }
+  .yt {
+    height: 3.5vw;
+  }
+  .sm {
+    margin-top: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+  }
+
   .right {
+    margin: 0%;
     width: 100%;
     height: 40%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     /* background-color: #e8e8e8; */
   }
   .right img {
@@ -560,7 +616,7 @@ body {
 
   /* +++++++++++++++++++++++ PAGE 5 ++++++++++++++++++++++++++++++ */
   .page5 {
-    height: 75vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -593,43 +649,19 @@ body {
   }
   .icons {
     display: flex;
-    margin-left: 30px;
+    margin-left: 3vw;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 3vw;
+    justify-content: center;
+    font-size: 2vw;
     width: 180px;
+    gap: 0px;
+    /* background-color: #008cba; */
   }
-  .face:hover {
-    background-color: #2d2d2d;
+  .insta1 {
+    height: 30px;
   }
-  .what:hover {
-    background-color: #2d2d2d;
-  }
-  .insta:hover {
-    background-color: #2d2d2d;
-  }
-  .git1:hover {
-    background-color: #2d2d2d;
-  }
-  .face {
-    padding: 10px 13px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-  }
-  .what {
-    padding: 10px 13px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-  }
-  .insta {
-    padding: 10px 13px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-  }
-  .git1 {
-    padding: 10px 13px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
+  .what1 {
+    height: 30px;
   }
 
   .right1 {
@@ -675,5 +707,65 @@ body {
     font-size: 2vw;
     font-weight: 700;
     margin-left: 4vw;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px) {
+  .main {
+    overflow-x: hidden;
+  }
+  .nav {
+    width: 95vw;
+  }
+  .page1 {
+    height: 60vh;
+  }
+  .left {
+    height: 50vw;
+    /* background-color: #008cba; */
+  }
+  .right {
+    height: 50vw;
+    /* background-color: #008cba; */
+  }
+  .page2 {
+    height: 60vh;
+  }
+  .page3 {
+    height: 60vh;
+  }
+  .page4 {
+    height: 80vh;
+  }
+  .page5 {
+    height: 70vh;
+  }
+  .left1 {
+    height: 40vh;
+  }
+  .right1 {
+    height: 40vh;
+  }
+  .footer {
+    position: sticky;
+    bottom: 0px;
+  }
+  .icons {
+    width: 200px;
+  }
+  .icoimg {
+    width: 35px;
+    height: 35px;
+  }
+  .what1 {
+    height: 30px;
+    width: 30px;
+  }
+  .insta1 {
+    height: 30px;
+    width: 30px;
+  }
+  #sendButton{
+    width: 15vw;
   }
 }
